@@ -1,0 +1,205 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-actions button {
+    padding: 0.5rem 1rem;
+    margin-left: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+    .header-actions button:hover {
+        background: #0056b3;
+    }
+
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.back-button {
+    background-color: #555;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.club-card {
+    background-color: #fff;
+    border-left: 5px solid #555;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+    .club-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .club-card h2 {
+        margin: 0 0 1rem 0;
+        color: #555;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .club-card p {
+        margin: 0.4rem 0;
+        color: #555;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+        .club-card p span {
+            margin-right: 0.5rem;
+            color: #555;
+        }
+
+.club-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+    .club-actions button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+#editClubBtn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+    #editClubBtn:hover {
+        background-color: #e0a800;
+    }
+
+#deleteClubBtn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+    #deleteClubBtn:hover {
+        background-color: #c82333;
+    }
+
+.match-card {
+    background-color: #fefefe;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 70%;
+    clear: both;
+    display: inline-block;
+}
+
+    .chat-message.me {
+        background: #d1e7dd;
+        float: right;
+        text-align: right;
+    }
+
+    .chat-message.other {
+        background: #f8d7da;
+        float: left;
+        text-align: left;
+    }
+

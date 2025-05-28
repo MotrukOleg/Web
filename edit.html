@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Edit Club</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+	<h1>Edit Club</h1>
+	<a href="index.html" class="back-button">← Back to Home</a>
+</header>
+
+<div class="form-container">
+	<h2>Update Club Information</h2>
+	<form id="editClubForm">
+		<label for="name">Club Name</label>
+		<input type="text" id="name" name="name" required />
+
+		<label for="city">City</label>
+		<input type="text" id="city" name="city" required />
+
+		<label for="country">Country</label>
+		<input type="text" id="country" name="country" required />
+
+		<label for="coach">Coach</label>
+		<input type="text" id="coach" name="coach" required />
+
+		<label for="founded">Founded Year</label>
+		<input type="number" id="founded" name="founded" required />
+
+		<button type="submit">Update Club</button>
+	</form>
+</div>
+
+<script src="js/edit.js"></script>
+</body>
+</html>
